@@ -1,0 +1,4 @@
+---- longestpa Æ¥Åä (3 in 1 ÎÄ¼þ) ----
+5.cpp (f:\leetcode-master\src):    string longestPalindrome(string s) {
+5.cpp (f:\leetcode-master\src):    assert(s.longestPalindrome(str0) == "aba");
+5.cpp (f:\leetcode-master\src):    assert(s.longestPalindrome(str1) == "a");
