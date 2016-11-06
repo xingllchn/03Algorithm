@@ -1,7 +1,0 @@
-# Executables
-*.exe
-*.out
-
-# Files without extension
-src/*
-!src/*.*

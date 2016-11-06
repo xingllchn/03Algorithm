@@ -1,5 +1,0 @@
-// Source : https://oj.leetcode.com/problems/zigzag-conversion/
-// Author : Leilei	Xing
-// Date   : 2016-09-05
-
-leetcode worth you learning!
