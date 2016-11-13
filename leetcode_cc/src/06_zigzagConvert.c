@@ -2,7 +2,6 @@
 From			:	https://leetcode.com/problemset/algorithms/
 To			:	https://github.com/xingllchn/03algorithm/tree/master/leetcode_cc/src
 Data			:	2016-11-13
-author		:	xingllchn
 Description	: 
 		The string "PAYPALISHIRING" is written in a zigzag pattern
 		【	P   A   H   N
@@ -50,12 +49,12 @@ char *convert(char *s, int nRows)
 	for (i = 0; i < nRows; i++) 
 	{
 		offset = 0;
-		//shift为当前数据与下一个同行数据的下标差值
-		//对于不是0(最小)和nRows(最大)的行来说，shift的值是通过shift=t-shift不断变化的
-		/*其中,t为最大的相邻数据下标差,如下所示。
+		/*shift:为当前数据与下一个同行数据的下标差值,对于不是0(最小)和nRows(最大)的行来说，shift的值是通过shift=t-shift不断变化的;
+		t:为最大的相邻数据下标差,如下所示。
 			|
 			|	/
 			|
+		i+offset:为当前数据下标，根据当前shift，通过offset+=shift不断增加。
 		*/
 		shift = (nRows - i - 1) * 2;
 		while (j < len && i + offset < len)

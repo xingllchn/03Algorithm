@@ -1,8 +1,6 @@
 /*
 From			:	https://leetcode.com/problemset/algorithms/
 to			:	https://github.com/xingllchn/03algorithm/tree/master/leetcode_cc/src
-Data			:	2016-11-13
-author		:	xingllchn
 Description	: 
 			Example:
 				Input: "babad"
