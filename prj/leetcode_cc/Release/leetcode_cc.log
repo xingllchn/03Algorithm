@@ -1,0 +1,15 @@
+﻿生成启动时间为 2016/11/12 11:40:05。
+     1>项目“F:\03algorithm\prj\leetcode_cc\leetcode_cc.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“Release\leetcode_cc.lastbuildstate”。
+       InitializeBuildStatus:
+         正在对“Release\leetcode_cc.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:oldSyntax /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /EHa /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /TC /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /analyze- /errorReport:prompt ..\..\leetcode_cc\src\1.c /clr:nostdlib 
+     1>cl : 命令行 warning D9035: “clr:oldsyntax”选项已否决，并将在将来的版本中移除
+     1>cl : 命令行 error D8045: 不能使用 /clr 选项编译 C 文件“..\..\leetcode_cc\src\1.c”
+     1>已完成生成项目“F:\03algorithm\prj\leetcode_cc\leetcode_cc.vcxproj”(rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.11
