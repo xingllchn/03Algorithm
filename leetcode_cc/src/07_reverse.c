@@ -7,7 +7,7 @@ Description	:
 		Example2: x = -123, return -321
 			
 知识点	:
-			1)
+			1)有效利用stdint.h头文件中的宏定义
 核心思想	:
 			1)考虑数据反转后可能的溢出
 */
