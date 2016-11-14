@@ -2,16 +2,16 @@
 From			:	https://leetcode.com/problemset/algorithms/
 To			:	https://github.com/xingllchn/03algorithm/tree/master/leetcode_cc/src
 Data			:	2016-11-14
-Description	: 
+Description		: 
 			Palindrome Number
-ÖªÊ¶µã	:
+çŸ¥è¯†ç‚¹	:
 			1)
-ºËĞÄË¼Ïë	:
-			1)È¡¸ÃÖµµÄ·´ÏòÖµ£¬±È½Ï´óĞ¡¼´¿É
+æ ¸å¿ƒæ€æƒ³	:
+			1)å–è¯¥å€¼çš„åå‘å€¼ï¼Œæ¯”è¾ƒå¤§å°å³å¯
 */
 #include <stdio.h>
 #include <stdbool.h>
-//ĞÎÊ½Ò»
+//å½¢å¼ä¸€
 bool isPalindrome1(int x) {
     if (x < 0) return false;
 
@@ -33,7 +33,7 @@ bool isPalindrome1(int x) {
 
     return true;
 }
-//ĞÎÊ½¶ş
+//å½¢å¼äºŒ
 bool isPalindrome2(int x)
 {
 	int t=0,m=x;
