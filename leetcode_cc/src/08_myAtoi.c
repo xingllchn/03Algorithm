@@ -5,10 +5,10 @@ Data			:	2016-11-14
 Description		: 
 		Implement atoi to convert a string to an integer.
 			
-ÖªÊ¶µã	:
+çŸ¥è¯†ç‚¹	:
 			1)
-ºËĞÄË¼Ïë	:
-			1)Ğè¿¼ÂÇ¿Õ¸ñ¡¢Õı¸ººÅ¡¢¸ºÖµ¼«ÏŞ¡¢Òç³ö
+æ ¸å¿ƒæ€æƒ³	:
+			1)éœ€è€ƒè™‘ç©ºæ ¼ã€æ­£è´Ÿå·ã€è´Ÿå€¼æé™ã€æº¢å‡º
 */
 #include <stdio.h>
 #include <stdint.h>
@@ -17,9 +17,9 @@ int myAtoi(char *str) {
 	int64_t ret = 0;
 	int sign = 1;
 	char *p = str;
-	//Ò»:¿¼ÂÇ¿Õ¸ñ
+	//ä¸€:è€ƒè™‘ç©ºæ ¼
 	while (*p == ' ') p++;
-	//¶ş:¿¼ÂÇÕı¸ººÅ
+	//äºŒ:è€ƒè™‘æ­£è´Ÿå·
 	if (*p == '-') {
 	    sign = -1;
 	    p++;
@@ -28,16 +28,16 @@ int myAtoi(char *str) {
 	    sign = 1;
 	    p++;
 	}
-	//Õı³£·¶Î§
+	//æ­£å¸¸èŒƒå›´
 	while (*p >= '0' && *p <= '9') {
 		ret = ret * 10 + (*p - '0');
-		//¸ºÖµ¼«ÏŞ
+		//è´Ÿå€¼æé™
 		if (ret - 1 > INT32_MAX) ret = (int64_t)INT32_MAX + 1;
 		p++;
 	}
 
 	if (sign == -1) ret = -ret;
-	//Èı:¿¼ÂÇÒç³ö
+	//ä¸‰:è€ƒè™‘æº¢å‡º
 	if (ret > INT32_MAX) ret = INT32_MAX;
 	if (ret < INT32_MIN) ret = INT32_MIN;
 
