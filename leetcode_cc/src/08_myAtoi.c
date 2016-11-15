@@ -2,7 +2,7 @@
 From			:	https://leetcode.com/problemset/algorithms/
 To			:	https://github.com/xingllchn/03algorithm/tree/master/leetcode_cc/src
 Data			:	2016-11-14
-Description	: 
+Description		: 
 		Implement atoi to convert a string to an integer.
 			
 ÖªÊ¶µã	:

@@ -5,7 +5,7 @@ Data			:	2016-11-14
 Description	: 
 			Palindrome Number
 知识点	:
-			1)
+			1)C99中加入stdbool.h
 核心思想	:
 			1)取该值的反向值，比较大小即可
 */
