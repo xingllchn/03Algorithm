@@ -1,7 +1,8 @@
 /*
 From			:	https://leetcode.com/problemset/algorithms/
 To			:	https://github.com/xingllchn/03algorithm/tree/master/leetcode_cc/src
-Data			:	2016-11-14
+Data			:	2016-11-17
+author		:	xingllchn
 Description	: 
 		Example1: x = 123, return 321
 		Example2: x = -123, return -321
@@ -27,7 +28,7 @@ int check_add(int a, int b, int *p) {
     *p = (int)ret;
     return ret >= INT32_MAX || ret <= INT32_MIN;
 }
-//取除数，乘以10，使该值左移一位
+//取除数，乘以10，使该值十进制左移一位
 int check_mul(int a, int b, int *p) {
     int64_t ret = (int64_t)a * (int64_t)b;
     *p = (int)ret;

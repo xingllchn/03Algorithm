@@ -20,7 +20,7 @@ Description	:
 */
 #include <stdio.h>
 #include <stdbool.h>
-bool isMatch(const char *s, const char *p) 
+bool isMatch(const char *s, const char *p)
 {
 	//如果*p为空,返回*s是否为空的判断
 	if(*p == '\0')
