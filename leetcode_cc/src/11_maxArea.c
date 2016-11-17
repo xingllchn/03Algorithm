@@ -2,17 +2,18 @@
 From			:	https://leetcode.com/problemset/algorithms/
 To			:	https://github.com/xingllchn/03algorithm/tree/master/leetcode_cc/src
 Data			:	2016-11-17 22:49
+author		:	xingllchn
 Description	: 
 			Given n non-negative integers a1, a2, ..., an, 
 			where each represents a point at coordinate (i, ai). 
 			n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0).
 			Find two lines, which together with x-axis forms a container, such that the container contains the most water.
 			Note: You may not slant the container.
-			在X轴上给定一些竖线，竖线有长度，求两条竖线与X轴构成的一个容器能容纳最多的水的面积，容器不能切斜。
 知识点	:
 			1)
 分析	:
 			1)考虑容器不能倾斜，需要选择两者最小值来计算水容器面积
+			2)在X轴上给定一些竖线，竖线有长度，求两条竖线与X轴构成的一个容器能容纳最多的水的面积，容器不能切斜。
 */
 #include<stdio.h>
 
