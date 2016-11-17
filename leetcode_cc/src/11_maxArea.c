@@ -7,6 +7,7 @@ Description	:
 			where each represents a point at coordinate (i, ai). 
 			n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0).
 			Find two lines, which together with x-axis forms a container, such that the container contains the most water.
+			Note: You may not slant the container.
 			在X轴上给定一些竖线，竖线有长度，求两条竖线与X轴构成的一个容器能容纳最多的水的面积.
 知识点	:
 			1)
@@ -41,7 +42,7 @@ int maxArea(int* height, int heightSize)
 } 
 int main(int argc,char ** argv)
 {
-	int height[5]={1,2,3,4,5};
+	int height[5]={5,2,3,4,5};//4//4*5,output 20
 	int area=0;
 	area = maxArea(height,sizeof(height)/sizeof(int));
 	printf("max area = %d\n",area);
