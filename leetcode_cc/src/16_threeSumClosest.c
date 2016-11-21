@@ -13,9 +13,10 @@ Description	:
 			2)找到和与目标值相差最小的三个值
 */
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdint.h>
 /*---取绝对值---*/
-static inline int abs(int tar)
+static inline int abs_t(int tar)
 {  
 	return tar>0?tar:-tar;  
 } 
@@ -45,6 +46,7 @@ int threeSumClosest(int* nums, int numsSize, int target)
 {  
 	int i,j,k;
 	int sum=0,Min =INT32_MAX;
+	int *ret =(int *)calloc(1,sizeof(int *));
 	quickSort(nums,0,numsSize-1);
 	for(i=0;i<numsSize-2;i++)
 	{  
@@ -55,7 +57,7 @@ int threeSumClosest(int* nums, int numsSize, int target)
 		while(j<k)
 		{  
 		    sum=nums[i]+nums[j]+nums[k];  
-		    if(abs(sum-target)<abs(Min))
+		    if(abs_t(sum-target)<abs_t(Min))
 				Min=sum-target;  
 		    if(sum==target)
 				return target;  
@@ -64,8 +66,9 @@ int threeSumClosest(int* nums, int numsSize, int target)
 		    else
 				j++;  
 		}  
-	}  
-	return Min+target;  
+	} 
+	*ret =Min+target;  
+	return *ret;  
 } 
 int main(int argc,char **argv)
 {
