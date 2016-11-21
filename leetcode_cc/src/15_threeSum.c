@@ -19,10 +19,9 @@ Description	:
 
 #include <stdio.h>
 #include <stdlib.h>
-/** * Return an array of arrays of size *returnSize. * Note: The returned array must be malloced, assume caller calls free(). */
-void merge_Sort(int *data,int n)
+/*---归并排序非递归方式实现---*/
+void mergeSort(int *data,int n)
 {
-	//归并排序非递归方式实现	
 	int *tmp = (int *)calloc(n,sizeof(int));
 	int lBegin,lEnd,rBegin,rEnd;
 	int i,j,k;	
@@ -57,9 +56,8 @@ void merge_Sort(int *data,int n)
 	}	
 	free(tmp);
 }
-/**
+/*
  * Return an array of arrays of size *returnSize.
- * Note: The returned array must be malloced, assume caller calls free().
  */
 int** threeSum(int* nums,int numsSize,int* returnSize) 
 {	
@@ -71,7 +69,7 @@ int** threeSum(int* nums,int numsSize,int* returnSize)
 		ret[i] = (int *)calloc(3,sizeof(int));
 	*returnSize = 0;
 	//输入数据从小到大排序
-	merge_Sort(nums,numsSize);
+	mergeSort(nums,numsSize);
 	for (i = 0; i < numsSize; i++) 
 	{
 		//如有重合,直接跳过
@@ -117,7 +115,7 @@ int main(int argc,char **argv)
 	int returnSize;
 	int i=0,j=0;
 	results=threeSum(nums,sizeof(nums)/sizeof(int),&returnSize);
-	printf("results =[\n");
+	printf("results =\n");
 	for(i=0;i<returnSize;i++)
 	{
 		for(j=0;j<3;j++)
@@ -126,7 +124,6 @@ int main(int argc,char **argv)
 		}
 		printf("\n");
 	}
-	printf("          ]\n");
 	printf("returnSize =%d\n",returnSize);
 	return 0;
 }
