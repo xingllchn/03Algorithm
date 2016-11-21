@@ -12,26 +12,29 @@ Description	:
 #include <stdio.h>
 #include <stdbool.h>
 //形式一
-bool isPalindrome1(int x) {
-    if (x < 0) return false;
+bool isPalindrome1(int x) 
+{
+	if (x < 0) return false;
 
-    int t = x;
-    int mask = 1;
-    while (t >= 10) {
-        mask *= 10;
-        t /= 10;
-    }
+	int t = x;
+	int mask = 1;
+	while (t >= 10) 
+	{
+		mask *= 10;
+		t /= 10;
+	}
 
-    int l, r;
-    while (x) {
-        r = x % 10;
-        l = x / mask;
-        if (l != r) return false;
-        x = (x % mask) / 10;
-        mask /= 100;
-    }
+	int l, r;
+	while (x) 
+	{
+		r = x % 10;
+		l = x / mask;
+		if (l != r) return false;
+		x = (x % mask) / 10;
+		mask /= 100;
+	}
 
-    return true;
+	return true;
 }
 //形式二
 bool isPalindrome2(int x)
