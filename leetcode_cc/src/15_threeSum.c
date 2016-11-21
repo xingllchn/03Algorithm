@@ -117,6 +117,7 @@ int main(int argc,char **argv)
 	int returnSize;
 	int i=0,j=0;
 	results=threeSum(nums,sizeof(nums)/sizeof(int),&returnSize);
+	printf("results =[\n");
 	for(i=0;i<returnSize;i++)
 	{
 		for(j=0;j<3;j++)
@@ -124,7 +125,8 @@ int main(int argc,char **argv)
 			printf("  %d",results[returnSize-i-1][j]);
 		}
 		printf("\n");
-	}	
+	}
+	printf("          ]\n");
 	printf("returnSize =%d\n",returnSize);
 	return 0;
 }
